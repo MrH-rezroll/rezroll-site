@@ -16,9 +16,6 @@ class Blog extends Component {
                                         <li>
                                             <Link className="nav-link" to="/post/:0" onClick={() => this.props.changePostId(0)}>Recent Post Title</Link>
                                         </li>
-                                        <li>
-                                            <Link className="nav-link" to="/post/:1" onClick={() => this.props.changePostId(1)}>Recent Post Title</Link>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
