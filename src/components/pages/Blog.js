@@ -11,10 +11,16 @@ class Blog extends Component {
                         <div className="inner-marketing-row-wrapper row">
                             <div className="col-lg-12">
                                 <div className="row gb-purple-box">
-                                    <h3>Posts</h3>
+                                    <h2>Blog Posts</h2>
+                                    <hr/>
                                     <ul>
                                         <li>
-                                            <Link className="nav-link" to="/post/:0" onClick={() => this.props.changePostId(0)}>Recent Post Title</Link>
+                                            <h3>Roll for Resurection<br/><em>Come on nat 20!</em></h3>
+                                            <p>
+                                                I'm leaving public education to find my place with a team of humans who are working on projects that make technology more human. I've leveled up my skills and it's time for me to try again.
+                                                <br/><Link className="btn btn-secondary" role="button" to="/post/:0" onClick={() => this.props.changePostId(0)}>Read Post &raquo;</Link>
+                                            </p>
+                                            <hr/>
                                         </li>
                                     </ul>
                                 </div>
