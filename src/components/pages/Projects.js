@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import Button from 'react-bootstrap/Button';
 import objectCollection from '../../images/object-collection.jpeg';
 import cityBuildings from '../../images/city-buildings.jpeg';
 import cityStuff from '../../images/city-stuff.jpeg';
@@ -44,7 +45,7 @@ class Projects extends Component {
                                 <div className="row">
                                         <div className="gb-blue-box">
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/4piny7TLkDw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                        <button className="btn btn-secondary" data-toggle="collapse" data-target="#desc-twitch-lcd">Project Description</button>
+                                        <Button onClick={() => (document.getElementById("desc-twitch-lcd").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="desc-twitch-lcd">
                                                 <br />
                                                 <p>After 5 years of "higher education" in computer programming/science my 
@@ -84,7 +85,7 @@ class Projects extends Component {
                                 <div className="row">
                                     <div className="gb-green-box" >
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/RPlFbSRFyXA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                        <button className="btn btn-secondary" data-toggle="collapse" data-target="#desc-twitch-3ds">Project Description</button>
+                                        <Button onClick={() => (document.getElementById("desc-twitch-3ds").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="desc-twitch-3ds">
                                             <br />
                                         <p>
@@ -131,6 +132,7 @@ class Projects extends Component {
                             <div className="col-lg-4">
                                 <div className="row gb-purple-box-lg">
                                     <h3>A Concept Middleware to Tell Better Stories (2020)</h3>
+                                    <p><strong><em>The video is currently down due to the university closing the Google account it was uploaded to. I'll record something new for it when time allows; however, if you're interested the project can be found on my <a title="UWG final project" href="https://github.com/MrH-rezroll/GameStoryDrive-UWG-Final" target="blank">GitHub</a> page where I forked it from my University of West Georgia account.</em></strong></p>
                                     <p>
                                         Java-JavaFX-Maven and MySQL
                                         <br />
@@ -142,8 +144,9 @@ class Projects extends Component {
                                 <div className="row">
                                     <div className="gb-pink-box">
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/u12q2yzJ-rs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                        <button className="btn btn-secondary" data-toggle="collapse" data-target="#desc-story-mapper">Project Description</button>
+                                        <Button onClick={() => (document.getElementById("desc-story-mapper").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="desc-story-mapper">
+                                            <br />
                                             <p>
                                                 This project is one I conceived and pitched to my professor as my team's 
                                                 graduate project. It was green-lit and my team and I built it. It is a 
@@ -182,8 +185,8 @@ class Projects extends Component {
                             <div className="col-lg-8">
                                 <div className="row">
                                     <div className="gb-blue-box">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NaTEHKtrW9o" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                        <button className="btn btn-secondary" data-toggle="collapse" data-target="#desc-twitch-2014">Project Description</button>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NaTEHKtrW9o" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <Button onClick={() => (document.getElementById("desc-twitch-2014").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="desc-twitch-2014">
                                             <br />
                                             <p>
@@ -217,7 +220,7 @@ class Projects extends Component {
                                 <div className="row">
                                     <div className="gb-green-box">
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/xk1pGxy1H6E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                        <button className="btn btn-secondary" data-toggle="collapse" data-target="#desc-hololens">Project Description</button>
+                                        <Button onClick={() => (document.getElementById("desc-hololens").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="desc-hololens">
                                             <br />
                                             <p>
@@ -252,7 +255,7 @@ class Projects extends Component {
                                 <div className="row">
                                     <div className="gb-pink-box">
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yy_hgvQx1Rs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                        <button className="btn btn-secondary" data-toggle="collapse" data-target="#about-ar-card">Project Description</button>
+                                        <Button onClick={() => (document.getElementById("about-ar-card").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="about-ar-card">
                                             <br />
                                             <p>
@@ -289,7 +292,7 @@ class Projects extends Component {
                                 <div className="row">
                                     <div className="gb-blue-box">
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/ENMR3W6218Y" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                        <button data-toggle="collapse" data-target="#about-sky">Project Description</button>
+                                        <Button onClick={() => (document.getElementById("about-sky").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="about-sky">
                                             <br />
                                             <p>
@@ -389,7 +392,9 @@ class Projects extends Component {
                                             </div>
                                             </div>
                                         </div>
-                                        <button className="btn btn-secondary" data-toggle="collapse" data-target="#about-home-model">Project Description</button>
+                                        </div>
+                                        <br />
+                                        <Button onClick={() => (document.getElementById("about-home-model").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="about-home-model">
                                             <br />
                                             <p>
@@ -399,7 +404,6 @@ class Projects extends Component {
                                                 rendering engine. In this final composition, I did not model the trees, bushes 
                                                 and flowers. Those are from a foliage pack I purchased.
                                             </p>
-                                        </div>
                                         </div>
                                     </div> 
                                 </div>
@@ -425,8 +429,9 @@ class Projects extends Component {
                                 <div className="row">
                                     <div className="gb-pink-box">
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/S8wnkgykM_M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                        <button className="btn btn-secondary" data-toggle="collapse" data-target="#about-home-dev">Project Description</button>
+                                        <Button onClick={() => (document.getElementById("about-home-dev").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="about-home-dev">
+                                            <br />
                                             <p>
                                                 This neighborhood fly through was created in Unity and recorded directly out of 
                                                 Unity to cut out render times due to a short deadline required to use this as 
@@ -529,7 +534,7 @@ class Projects extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                        <button className="btn btn-secondary" data-toggle="collapse" data-target="#about-stuff">Project Description</button>
+                                    <Button onClick={() => (document.getElementById("about-stuff").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="about-stuff">
                                             <p>
                                                 These are objects created for various personal projects. The load of things 
@@ -625,8 +630,11 @@ class Projects extends Component {
                                             </div>
                                             </div>
                                         </div>
-                                        <button className="btn btn-secondary" data-toggle="collapse" data-target="#about-sg-env">Project Description</button>
+                                        </div>
+                                        <br />
+                                    <Button onClick={() => (document.getElementById("about-sg-env").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="about-sg-env">
+                                            <br />
                                             <p>
                                                 This environment was first sketched on paper, both the complete scene and 
                                                 individual elements of the scene. The sketches were then used as view port 
@@ -634,7 +642,6 @@ class Projects extends Component {
                                                 The actual environment the screenshots are from is a DX9 game engine called 
                                                 "Game Core" which lived and died around the same time as Unity 1.x - 2.x.
                                             </p>
-                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -726,13 +733,15 @@ class Projects extends Component {
                                             </div>
                                             </div>
                                         </div>
-                                        <button className="btn btn-secondary" data-toggle="collapse" data-target="#about-stuff2">Project Description</button>
+                                    </div>
+                                    <br />
+                                        <Button onClick={() => (document.getElementById("about-stuff2").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="about-stuff2">
+                                            <br />
                                             <p>
                                                 The lit gate scene was rendered in GameCore and part of a real time game scene demo.
                                             </p>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                             </div>

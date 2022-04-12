@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Blog from './pages/Blog';
-import Post from './pages/BlogPost';
+//import Post from './pages/BlogPost';
 import Social from './pages/Social';
 
 import '../css/App.css';
