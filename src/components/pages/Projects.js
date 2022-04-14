@@ -1,5 +1,6 @@
 import React, { Component }  from 'react';
 import Button from 'react-bootstrap/Button';
+import Carousel from 'react-bootstrap/Carousel';
 import objectCollection from '../../images/object-collection.jpeg';
 import cityBuildings from '../../images/city-buildings.jpeg';
 import cityStuff from '../../images/city-stuff.jpeg';
@@ -331,67 +332,24 @@ class Projects extends Component {
                             <div className="col-lg-8">
                                 <div className="row">
                                     <div className="gb-green-box">
-                                        <div className="row" id="houseGallery" data-toggle="modal" data-target="#houseModal">
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={house1} data-target="#carouselHouse" data-slide-to="0" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={house2} data-target="#carouselHouse" data-slide-to="1" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={house3} data-target="#carouselHouse" data-slide-to="2" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={house4} data-target="#carouselHouse" data-slide-to="3" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={house5} data-target="#carouselHouse" data-slide-to="4" />
-                                            </div>
-                                        </div>
-                                        <div className="modal fade" id="houseModal" tabIndex="-1" role="dialog" aria-hidden="true">
-                                        <div className="modal-dialog" role="document">
-                                            <div className="modal-content">
-                                            <div className="modal-header">
-                                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                                </button>
-                                            </div>
-                                            <div className="modal-body">
-                                                
-                                            <div id="carouselHouse" className="carousel slide" data-ride="carousel">
-                                                <div className="carousel-inner">
-                                                    <div className="carousel-item active">
-                                                    <img className="d-block w-100" src={house1} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={house2} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={house3} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={house4} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={house5} alt="temp" />
-                                                    </div>
-                                                </div>
-                                                <a className="carousel-control-prev" href="#carouselHouse" role="button" data-slide="prev">
-                                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span className="sr-only">Previous</span>
-                                                </a>
-                                                <a className="carousel-control-next" href="#carouselHouse" role="button" data-slide="next">
-                                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span className="sr-only">Next</span>
-                                                </a>
-                                                </div>
-                                            </div>
-        
-                                            <div className="modal-footer">
-                                                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
-                                            </div>
-                                        </div>
+                                        <div style={{height:"400px"}}>
+                                            <Carousel style={{height:"100%",overflow:"hidden",backgroundColor:"#3f3f3f"}}>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={house1} alt="House One" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={house2} alt="House Two" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={house3} alt="House Three" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={house4} alt="House Four" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={house5} alt="House Five" />
+                                                </Carousel.Item>
+                                            </Carousel>
                                         </div>
                                         <br />
                                         <Button onClick={() => (document.getElementById("about-home-model").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
@@ -466,76 +424,32 @@ class Projects extends Component {
                             <div className="col-lg-8">
                                 <div className="row">
                                     <div className="gb-blue-box">
-                                        <div className="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={objectCollection} data-target="#carouselExample" data-slide-to="0" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={cityBuildings} data-target="#carouselExample" data-slide-to="1" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={cityStuff} data-target="#carouselExample" data-slide-to="2" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={apocRex1} data-target="#carouselExample" data-slide-to="3" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={apocRex2} data-target="#carouselExample" data-slide-to="4" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={apocRex3} data-target="#carouselExample" data-slide-to="5" />
-                                            </div>
+                                        <div style={{height:"400px"}}>
+                                            <Carousel style={{height:"100%",overflow:"hidden",backgroundColor:"#3f3f3f"}}>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={objectCollection} alt="Object Collection" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={cityBuildings} alt="City Buildings" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={cityStuff} alt="City Stuff" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={apocRex1} alt="Apocalypse Rex 1" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={apocRex2} alt="Apocalypse Rex 2" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={apocRex3} alt="Apocalypse Rex 3" />
+                                                </Carousel.Item>
+                                            </Carousel>
                                         </div>
-                                        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-hidden="true">
-                                        <div className="modal-dialog" role="document">
-                                            <div className="modal-content">
-                                            <div className="modal-header">
-                                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                                </button>
-                                            </div>
-                                            <div className="modal-body">
-                                                
-                                            <div id="carouselExample" className="carousel slide" data-ride="carousel">
-                                                <div className="carousel-inner">
-                                                    <div className="carousel-item active">
-                                                    <img className="d-block w-100" src={objectCollection} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={cityBuildings} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={cityStuff} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={apocRex1} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={apocRex2} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={apocRex3} alt="temp" />
-                                                    </div>
-                                                </div>
-                                                <a className="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span className="sr-only">Previous</span>
-                                                </a>
-                                                <a className="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span className="sr-only">Next</span>
-                                                </a>
-                                                </div>
-                                            </div>
-        
-                                            <div className="modal-footer">
-                                                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <Button onClick={() => (document.getElementById("about-stuff").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
+                                        <br />
+                                        <Button onClick={() => (document.getElementById("about-stuff").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="about-stuff">
+                                            <br />
                                             <p>
                                                 These are objects created for various personal projects. The load of things 
                                                 that look like a dorm room, was meant for a dorm room rendering that a local 
@@ -569,70 +483,27 @@ class Projects extends Component {
                             <div className="col-lg-8">
                                 <div className="row">
                                     <div className="gb-green-box">
-                                        <div className="row" id="coveGallery" data-toggle="modal" data-target="#coveModal">
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={cove1} data-target="#carouselCove" data-slide-to="0" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={cove2} data-target="#carouselCove" data-slide-to="1" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={cove3} data-target="#carouselCove" data-slide-to="2" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={cove4} data-target="#carouselCove" data-slide-to="3" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={cove5} data-target="#carouselCove" data-slide-to="4" />
-                                            </div>
-                                        </div>
-                                        <div className="modal fade" id="coveModal" tabIndex="-1" role="dialog" aria-hidden="true">
-                                        <div className="modal-dialog" role="document">
-                                            <div className="modal-content">
-                                            <div className="modal-header">
-                                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                                </button>
-                                            </div>
-                                            <div className="modal-body">
-                                                
-                                            <div id="carouselCove" className="carousel slide" data-ride="carousel">
-                                                <div className="carousel-inner">
-                                                    <div className="carousel-item active">
-                                                    <img className="d-block w-100" src={cove1} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={cove2} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={cove3} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={cove4} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={cove5} alt="temp" />
-                                                    </div>
-                                                </div>
-                                                <a className="carousel-control-prev" href="#carouselCove" role="button" data-slide="prev">
-                                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span className="sr-only">Previous</span>
-                                                </a>
-                                                <a className="carousel-control-next" href="#carouselCove" role="button" data-slide="next">
-                                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span className="sr-only">Next</span>
-                                                </a>
-                                                </div>
-                                            </div>
-        
-                                            <div className="modal-footer">
-                                                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
-                                            </div>
-                                        </div>
+                                        <div style={{height:"400px"}}>
+                                            <Carousel style={{height:"100%",overflow:"hidden",backgroundColor:"#3f3f3f"}}>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={cove1} alt="Cove 1" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={cove2} alt="Cove 2" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={cove3} alt="Cove 3" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={cove4} alt="Cove 4" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={cove5} alt="Cove 5" />
+                                                </Carousel.Item>
+                                            </Carousel>
                                         </div>
                                         <br />
-                                    <Button onClick={() => (document.getElementById("about-sg-env").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
+                                        <Button onClick={() => (document.getElementById("about-sg-env").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="about-sg-env">
                                             <br />
                                             <p>
@@ -666,81 +537,36 @@ class Projects extends Component {
                             <div className="col-lg-8">
                                 <div className="row">
                                     <div className="gb-pink-box">
-                                        <div className="row" id="gateGallery" data-toggle="modal" data-target="#gateModal">
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={gate1} data-target="#carouselGate" data-slide-to="0" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={gate2} data-target="#carouselGate" data-slide-to="1" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={gate3} data-target="#carouselGate" data-slide-to="2" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={gate4} data-target="#carouselGate" data-slide-to="3" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={gate5} data-target="#carouselGate" data-slide-to="4" />
-                                            </div>
-                                            <div className="col-12 col-sm-6 col-lg-3">
-                                                <img alt="temp" className="w-100" src={gate6} data-target="#carouselGate" data-slide-to="4" />
-                                            </div>
+                                        <div style={{height:"500px"}}>
+                                            <Carousel style={{height:"100%",overflow:"hidden",backgroundColor:"#3f3f3f"}}>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={gate1} alt="StarGate 1" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={gate2} alt="StarGate 2" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={gate3} alt="StarGate 3" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={gate4} alt="Alien Head 4" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={gate5} alt="StarGate 5" />
+                                                </Carousel.Item>
+                                                <Carousel.Item interval={3000}>
+                                                <img className="d-block w-100" src={gate6} alt="StarGate 6" />
+                                                </Carousel.Item>
+                                            </Carousel>
                                         </div>
-                                        <div className="modal fade" id="gateModal" tabIndex="-1" role="dialog" aria-hidden="true">
-                                        <div className="modal-dialog" role="document">
-                                            <div className="modal-content">
-                                            <div className="modal-header">
-                                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                                </button>
-                                            </div>
-                                            <div className="modal-body">
-                                                
-                                            <div id="carouselGate" className="carousel slide" data-ride="carousel">
-                                                <div className="carousel-inner">
-                                                    <div className="carousel-item active">
-                                                    <img className="d-block w-100" src={gate1} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={gate2} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={gate3} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={gate4} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={gate5} alt="temp" />
-                                                    </div>
-                                                    <div className="carousel-item">
-                                                    <img className="d-block w-100" src={gate6} alt="temp" />
-                                                    </div>
-                                                </div>
-                                                <a className="carousel-control-prev" href="#carouselGate" role="button" data-slide="prev">
-                                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span className="sr-only">Previous</span>
-                                                </a>
-                                                <a className="carousel-control-next" href="#carouselGate" role="button" data-slide="next">
-                                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span className="sr-only">Next</span>
-                                                </a>
-                                                </div>
-                                            </div>
-        
-                                            <div className="modal-footer">
-                                                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <br />
+                                        <br />
                                         <Button onClick={() => (document.getElementById("about-stuff2").classList.toggle("collapse"))} className="btn btn-secondary">Project Description</Button>
                                         <div className="collapse" id="about-stuff2">
                                             <br />
                                             <p>
                                                 The lit gate scene was rendered in GameCore and part of a real time game scene demo.
                                             </p>
+                                            <br />
                                         </div>
                                     </div>
                                 </div>
