@@ -485,6 +485,10 @@ box-shadow: inset 0px -1px 4px #3c3c3c;
   margin-bottom: 0.3rem;
 }
 
+.navbar-toggler{
+  margin: 0 10%;
+}
+
 @media (min-width: 768px) {
   .navbar-toggle{
     display: none;

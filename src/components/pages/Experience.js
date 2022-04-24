@@ -61,9 +61,7 @@ class Experience extends Component {
                                                 <h4>2D Content Creation</h4>
                                                 <ul>
                                                     <li>Adobe (Photoshop, Premiere Pro, AfterEffects)</li>
-                                                    <li>MySQL</li>
-                                                    <li>JavaScript (jQuery, React, ThreeJS)</li>
-                                                    <li>HTML/CSS</li>
+                                                    <li>Various non-Adobe software for similiar tasks.</li>
                                                 </ul>
                                             </div>
                                             <div className="col-lg-6">
