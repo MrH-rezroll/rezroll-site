@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 import { Link } from 'react-router-dom';
-import twitchLCD from '../../images/lcd-twitch.gif';
+import twitchLCD from './../../images/lcd-twitch.gif';
 import parse from "html-react-parser";
 
 class Home extends Component {
