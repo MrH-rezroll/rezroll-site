@@ -63,6 +63,7 @@ class App extends Component {
             <Route path="post/:postId" element={<BlogPost postId={this.state.postId} postSummary={this.state.posts[this.state.postId].summary} postTitle={this.state.posts[this.state.postId].title} postBody={this.state.posts[this.state.postId].body} postDate={this.state.posts[this.state.postId].date}/>} />
             <Route path="social" element={<Social />} />
             <Route path="experience" element={<Experience />} />
+            <Route path="*" element={<Home changePostId={this.changePostId} changePage={this.changePage} postTitle={this.state.posts[0].title}/>} />
           </Routes>
           <Footer />
         </div>
